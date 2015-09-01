@@ -8,5 +8,8 @@
  * extension
  */
 module.exports = function fileExtension(name) {
+  var period = name.lastIndexOf('.');
+  if (period === -1) {return false; }
+  retrun name.substr(period +1);
 
 };
